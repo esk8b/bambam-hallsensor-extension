@@ -30,6 +30,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:drv5013
+LIBS:dips-s
 LIBS:Sensor-holder-cache
 EELAYER 25 0
 EELAYER END
@@ -300,10 +301,6 @@ Wire Wire Line
 	1250 5450 1250 5250
 Wire Wire Line
 	1250 4850 1250 4650
-Wire Wire Line
-	1250 4150 1250 3600
-Text Label 1250 3700 0    60   ~ 0
-Vcc
 $Comp
 L MOSFET_P Q1
 U 1 1 550ECD42
@@ -354,10 +351,6 @@ Wire Wire Line
 	3000 4850 3000 4650
 Wire Wire Line
 	3000 5450 3000 5250
-Wire Wire Line
-	3000 3600 3000 3300
-Text Label 3000 3300 0    60   ~ 0
-Vcc
 Wire Wire Line
 	2700 3800 2500 3800
 Text Label 2500 3800 0    60   ~ 0
@@ -413,10 +406,6 @@ Wire Wire Line
 Wire Wire Line
 	3900 5450 3900 5250
 Wire Wire Line
-	3900 3600 3900 3300
-Text Label 3900 3300 0    60   ~ 0
-Vcc
-Wire Wire Line
 	3600 3800 3400 3800
 $Comp
 L MOSFET_P Q3
@@ -468,10 +457,6 @@ Wire Wire Line
 	4800 4850 4800 4650
 Wire Wire Line
 	4800 5450 4800 5250
-Wire Wire Line
-	4800 3600 4800 3300
-Text Label 4800 3300 0    60   ~ 0
-Vcc
 Wire Wire Line
 	4500 3800 4300 3800
 Text Label 3400 3800 0    60   ~ 0
@@ -539,7 +524,7 @@ Text Notes 6250 3750 0    60   ~ 0
 Pull UP Area\nbestücken nur wenn\nbenötigt wird
 Text Notes 3000 3050 0    60   ~ 0
 LED für die Sensoren\nmuss nicht bestückt werden
-Text Notes 1050 2950 0    60   ~ 0
+Text Notes 1350 4850 0    60   ~ 0
 LED-Spannungsversorgung
 Text Notes 4350 750  0    60   ~ 0
 Anschlussstecker\n
@@ -633,4 +618,36 @@ Text Label 8300 3900 0    60   ~ 0
 C
 Text Notes 7450 3650 0    60   ~ 0
 Filter Kondesatoren Messsignal\nbestücken nur wenn benötigt wird
+Wire Wire Line
+	1250 2350 1250 1950
+Text Label 1250 1950 0    60   ~ 0
+Vcc
+$Comp
+L DIPS_01 SW1
+U 1 1 550FBEB9
+P 1250 2550
+F 0 "SW1" V 1150 2550 60  0000 C CNN
+F 1 "LED" V 1350 2550 60  0000 C CNN
+F 2 "dips-s:DIPS-DS01" H 1250 2550 60  0001 C CNN
+F 3 "" H 1250 2550 60  0000 C CNN
+	1    1250 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 2750 1250 4150
+Wire Wire Line
+	3000 3600 3000 3300
+Wire Wire Line
+	1250 3300 4800 3300
+Connection ~ 1250 3300
+Wire Wire Line
+	3900 3300 3900 3600
+Connection ~ 3000 3300
+Wire Wire Line
+	4800 3300 4800 3600
+Connection ~ 3900 3300
+Text Notes 1550 2600 0    60   ~ 0
+LEDs\nein- ausschalten
+Text Notes 7150 2800 0    60   ~ 0
+Alles für die Hall-Sensoren
 $EndSCHEMATC
