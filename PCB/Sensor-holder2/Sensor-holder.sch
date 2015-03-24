@@ -1,0 +1,486 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:drv5013
+LIBS:dips-s
+LIBS:Mount_Hole
+LIBS:Sensor-holder-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Sesnor-Board"
+Date "Sonntag, 22. März 2015"
+Rev "1.0"
+Comp "Barney"
+Comment1 "First Try"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L R R10
+U 1 1 550EAAEC
+P 4650 3900
+F 0 "R10" V 4730 3900 50  0000 C CNN
+F 1 "470" V 4657 3901 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" H 4580 3900 30  0001 C CNN
+F 3 "" H 4650 3900 30  0000 C CNN
+	1    4650 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D10
+U 1 1 550EB7C7
+P 4650 4550
+F 0 "D10" H 4650 4650 50  0000 C CNN
+F 1 "blau" H 4650 4450 50  0000 C CNN
+F 2 "LEDs:LED-0805" H 4650 4550 60  0001 C CNN
+F 3 "" H 4650 4550 60  0000 C CNN
+	1    4650 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X05 P1
+U 1 1 550EBA3E
+P 4900 1200
+F 0 "P1" H 4900 1500 50  0000 C CNN
+F 1 "CONN_01X05" V 5000 1200 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x05" H 4900 1200 60  0001 C CNN
+F 3 "" H 4900 1200 60  0000 C CNN
+	1    4900 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR2
+U 1 1 550EBAD5
+P 4650 4950
+F 0 "#PWR2" H 4650 4700 60  0001 C CNN
+F 1 "GND" H 4650 4800 60  0000 C CNN
+F 2 "" H 4650 4950 60  0000 C CNN
+F 3 "" H 4650 4950 60  0000 C CNN
+	1    4650 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L DRV5013AD U1
+U 1 1 550EBD66
+P 9900 4350
+F 0 "U1" H 10350 4650 60  0000 C CNN
+F 1 "DRV5013AD" H 10350 4550 60  0000 C CNN
+F 2 "packages:P-SSO-3-2" H 9900 4350 60  0001 C CNN
+F 3 "" H 9900 4350 60  0000 C CNN
+	1    9900 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR1
+U 1 1 550EBE5C
+P 4050 1000
+F 0 "#PWR1" H 4050 750 60  0001 C CNN
+F 1 "GND" H 4050 850 60  0000 C CNN
+F 2 "" H 4050 1000 60  0000 C CNN
+F 3 "" H 4050 1000 60  0000 C CNN
+	1    4050 1000
+	0    1    1    0   
+$EndComp
+Text Label 4300 1100 0    60   ~ 0
+Vcc
+Text Label 4300 1200 0    60   ~ 0
+A
+Text Label 4300 1300 0    60   ~ 0
+B
+Text Label 4300 1400 0    60   ~ 0
+C
+$Comp
+L C C10
+U 1 1 550EBFC1
+P 9200 1500
+F 0 "C10" H 9250 1600 50  0000 L CNN
+F 1 "1uF" H 9250 1400 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206" H 9238 1350 30  0001 C CNN
+F 3 "" H 9200 1500 60  0000 C CNN
+	1    9200 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 550EC04E
+P 9700 1500
+F 0 "C1" H 9750 1600 50  0000 L CNN
+F 1 "100nF" H 9750 1400 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206" H 9738 1350 30  0001 C CNN
+F 3 "" H 9700 1500 60  0000 C CNN
+	1    9700 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 550EC0E2
+P 10050 1500
+F 0 "C2" H 10100 1600 50  0000 L CNN
+F 1 "100nF" H 10100 1400 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206" H 10088 1350 30  0001 C CNN
+F 3 "" H 10050 1500 60  0000 C CNN
+	1    10050 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 550EC10B
+P 10400 1500
+F 0 "C3" H 10450 1600 50  0000 L CNN
+F 1 "100nF" H 10450 1400 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206" H 10438 1350 30  0001 C CNN
+F 3 "" H 10400 1500 60  0000 C CNN
+	1    10400 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR6
+U 1 1 550EC21C
+P 9200 1950
+F 0 "#PWR6" H 9200 1700 60  0001 C CNN
+F 1 "GND" H 9200 1800 60  0000 C CNN
+F 2 "" H 9200 1950 60  0000 C CNN
+F 3 "" H 9200 1950 60  0000 C CNN
+	1    9200 1950
+	1    0    0    -1  
+$EndComp
+Text Label 9500 1100 0    60   ~ 0
+Vcc
+$Comp
+L GND #PWR7
+U 1 1 550EC3CB
+P 9450 4350
+F 0 "#PWR7" H 9450 4100 60  0001 C CNN
+F 1 "GND" H 9450 4200 60  0000 C CNN
+F 2 "" H 9450 4350 60  0000 C CNN
+F 3 "" H 9450 4350 60  0000 C CNN
+	1    9450 4350
+	0    1    1    0   
+$EndComp
+Text Label 9600 4250 0    60   ~ 0
+Vcc
+Text Label 9600 4450 0    60   ~ 0
+A
+$Comp
+L DRV5013AD U2
+U 1 1 550EC74B
+P 9900 4850
+F 0 "U2" H 10350 5150 60  0000 C CNN
+F 1 "DRV5013AD" H 10350 5050 60  0000 C CNN
+F 2 "packages:P-SSO-3-2" H 9900 4850 60  0001 C CNN
+F 3 "" H 9900 4850 60  0000 C CNN
+	1    9900 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L DRV5013AD U3
+U 1 1 550EC77C
+P 9900 5350
+F 0 "U3" H 10350 5650 60  0000 C CNN
+F 1 "DRV5013AD" H 10350 5550 60  0000 C CNN
+F 2 "packages:P-SSO-3-2" H 9900 5350 60  0001 C CNN
+F 3 "" H 9900 5350 60  0000 C CNN
+	1    9900 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR8
+U 1 1 550EC7E2
+P 9450 4850
+F 0 "#PWR8" H 9450 4600 60  0001 C CNN
+F 1 "GND" H 9450 4700 60  0000 C CNN
+F 2 "" H 9450 4850 60  0000 C CNN
+F 3 "" H 9450 4850 60  0000 C CNN
+	1    9450 4850
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR9
+U 1 1 550EC7F7
+P 9450 5350
+F 0 "#PWR9" H 9450 5100 60  0001 C CNN
+F 1 "GND" H 9450 5200 60  0000 C CNN
+F 2 "" H 9450 5350 60  0000 C CNN
+F 3 "" H 9450 5350 60  0000 C CNN
+	1    9450 5350
+	0    1    1    0   
+$EndComp
+Text Label 9600 4750 0    60   ~ 0
+Vcc
+Text Label 9600 5250 0    60   ~ 0
+Vcc
+Text Label 9600 4950 0    60   ~ 0
+B
+Text Label 9600 5450 0    60   ~ 0
+C
+$Comp
+L R R21
+U 1 1 550ED88C
+P 6300 4450
+F 0 "R21" V 6380 4450 50  0000 C CNN
+F 1 "10k" V 6307 4451 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" H 6230 4450 30  0001 C CNN
+F 3 "" H 6300 4450 30  0000 C CNN
+	1    6300 4450
+	1    0    0    -1  
+$EndComp
+Text Label 6300 3900 0    60   ~ 0
+Vcc
+Text Label 6300 5000 0    60   ~ 0
+A
+$Comp
+L R R22
+U 1 1 550EDA9B
+P 6550 4450
+F 0 "R22" V 6630 4450 50  0000 C CNN
+F 1 "10k" V 6557 4451 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" H 6480 4450 30  0001 C CNN
+F 3 "" H 6550 4450 30  0000 C CNN
+	1    6550 4450
+	1    0    0    -1  
+$EndComp
+Text Label 6550 3900 0    60   ~ 0
+Vcc
+$Comp
+L R R23
+U 1 1 550EDAE4
+P 6800 4450
+F 0 "R23" V 6880 4450 50  0000 C CNN
+F 1 "10k" V 6807 4451 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206" H 6730 4450 30  0001 C CNN
+F 3 "" H 6800 4450 30  0000 C CNN
+	1    6800 4450
+	1    0    0    -1  
+$EndComp
+Text Label 6800 3900 0    60   ~ 0
+Vcc
+Text Label 6550 5000 0    60   ~ 0
+B
+Text Label 6800 5000 0    60   ~ 0
+C
+Text Notes 6250 3750 0    60   ~ 0
+Pull UP Area\nbestücken nur wenn\nbenötigt wird
+Text Notes 4750 4350 0    60   ~ 0
+LED-Spannungsversorgung
+Text Notes 4350 750  0    60   ~ 0
+Anschlussstecker\n
+Text Notes 9250 800  0    60   ~ 0
+Filter Kondensatoren\nfür die Versorgungsspannung
+Text Notes 9700 3850 0    60   ~ 0
+Hall Sensoren
+$Comp
+L C C21
+U 1 1 550EDF31
+P 7500 4500
+F 0 "C21" H 7550 4600 50  0000 L CNN
+F 1 "680pF" H 7550 4400 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206" H 7538 4350 30  0001 C CNN
+F 3 "" H 7500 4500 60  0000 C CNN
+	1    7500 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR3
+U 1 1 550EE04A
+P 7500 4900
+F 0 "#PWR3" H 7500 4650 60  0001 C CNN
+F 1 "GND" H 7500 4750 60  0000 C CNN
+F 2 "" H 7500 4900 60  0000 C CNN
+F 3 "" H 7500 4900 60  0000 C CNN
+	1    7500 4900
+	1    0    0    -1  
+$EndComp
+Text Label 7500 3900 0    60   ~ 0
+A
+$Comp
+L C C22
+U 1 1 550EE154
+P 7900 4500
+F 0 "C22" H 7950 4600 50  0000 L CNN
+F 1 "680pF" H 7950 4400 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206" H 7938 4350 30  0001 C CNN
+F 3 "" H 7900 4500 60  0000 C CNN
+	1    7900 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR4
+U 1 1 550EE15A
+P 7900 4900
+F 0 "#PWR4" H 7900 4650 60  0001 C CNN
+F 1 "GND" H 7900 4750 60  0000 C CNN
+F 2 "" H 7900 4900 60  0000 C CNN
+F 3 "" H 7900 4900 60  0000 C CNN
+	1    7900 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C23
+U 1 1 550EE1A8
+P 8300 4500
+F 0 "C23" H 8350 4600 50  0000 L CNN
+F 1 "680pF" H 8350 4400 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206" H 8338 4350 30  0001 C CNN
+F 3 "" H 8300 4500 60  0000 C CNN
+	1    8300 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR5
+U 1 1 550EE1AE
+P 8300 4900
+F 0 "#PWR5" H 8300 4650 60  0001 C CNN
+F 1 "GND" H 8300 4750 60  0000 C CNN
+F 2 "" H 8300 4900 60  0000 C CNN
+F 3 "" H 8300 4900 60  0000 C CNN
+	1    8300 4900
+	1    0    0    -1  
+$EndComp
+Text Label 7900 3900 0    60   ~ 0
+B
+Text Label 8300 3900 0    60   ~ 0
+C
+Text Notes 7450 3650 0    60   ~ 0
+Filter Kondesatoren Messsignal\nbestücken nur wenn benötigt wird
+Text Notes 7150 2800 0    60   ~ 0
+Alles für die Hall-Sensoren
+Wire Wire Line
+	4700 1000 4050 1000
+Wire Wire Line
+	4700 1100 4300 1100
+Wire Wire Line
+	4700 1200 4300 1200
+Wire Wire Line
+	4700 1300 4300 1300
+Wire Wire Line
+	4700 1400 4300 1400
+Wire Wire Line
+	9200 1700 9200 1950
+Wire Wire Line
+	9700 1700 9700 1800
+Wire Wire Line
+	9200 1800 10400 1800
+Connection ~ 9200 1800
+Wire Wire Line
+	10050 1800 10050 1700
+Connection ~ 9700 1800
+Wire Wire Line
+	10400 1800 10400 1700
+Connection ~ 10050 1800
+Wire Wire Line
+	10400 1300 10400 1100
+Wire Wire Line
+	10400 1100 9200 1100
+Wire Wire Line
+	9200 1100 9200 1300
+Wire Wire Line
+	9700 1300 9700 1100
+Connection ~ 9700 1100
+Wire Wire Line
+	10050 1300 10050 1100
+Connection ~ 10050 1100
+Wire Wire Line
+	9900 4250 9600 4250
+Wire Wire Line
+	9900 4350 9450 4350
+Wire Wire Line
+	9900 4450 9600 4450
+Wire Wire Line
+	9450 4850 9900 4850
+Wire Wire Line
+	9450 5350 9900 5350
+Wire Wire Line
+	9900 4950 9600 4950
+Wire Wire Line
+	9900 5450 9600 5450
+Wire Wire Line
+	9900 5250 9600 5250
+Wire Wire Line
+	9900 4750 9600 4750
+Wire Wire Line
+	4650 4950 4650 4750
+Wire Wire Line
+	4650 4350 4650 4150
+Wire Wire Line
+	6300 4200 6300 3900
+Wire Wire Line
+	6300 4700 6300 5000
+Wire Wire Line
+	6550 4200 6550 3900
+Wire Wire Line
+	6550 4700 6550 5000
+Wire Wire Line
+	6800 4200 6800 3900
+Wire Wire Line
+	6800 4700 6800 5000
+Wire Wire Line
+	7500 4900 7500 4700
+Wire Wire Line
+	7500 4300 7500 3900
+Wire Wire Line
+	7900 4900 7900 4700
+Wire Wire Line
+	7900 4300 7900 3900
+Wire Wire Line
+	8300 4900 8300 4700
+Wire Wire Line
+	8300 4300 8300 3900
+Wire Wire Line
+	4650 3650 4650 3100
+Text Label 4650 3100 0    60   ~ 0
+Vcc
+$Comp
+L Mount_Hole H1
+U 1 1 55114BC4
+P 6000 6700
+F 0 "H1" H 6150 6650 60  0000 L CNN
+F 1 "3mm" H 6150 6750 60  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3mm" H 6000 6700 60  0001 C CNN
+F 3 "" H 6000 6700 60  0000 C CNN
+	1    6000 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mount_Hole H2
+U 1 1 55114C71
+P 6000 6950
+F 0 "H2" H 6150 6900 60  0000 L CNN
+F 1 "3mm" H 6150 7000 60  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3mm" H 6000 6950 60  0001 C CNN
+F 3 "" H 6000 6950 60  0000 C CNN
+	1    6000 6950
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
