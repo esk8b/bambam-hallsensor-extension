@@ -1,4 +1,4 @@
-update=24.03.2015 12:31:44
+update=26.03.2015 12:49:10
 version=1
 last_client=kicad
 [cvpcb]
@@ -37,8 +37,6 @@ RptD_X=0
 RptD_Y=100
 RptLab=1
 LabSize=60
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=
@@ -76,3 +74,5 @@ LibName30=valves
 LibName31=C:/Users/Laptop-02/Documents/KiCad/Lib/Symbols/drv5013
 LibName32=C:/Users/Laptop-02/Documents/KiCad/Lib/Symbols/dips-s
 LibName33=C:/Users/Laptop-02/Documents/KiCad/Lib/Symbols/Mount_Hole
+[general]
+version=1
