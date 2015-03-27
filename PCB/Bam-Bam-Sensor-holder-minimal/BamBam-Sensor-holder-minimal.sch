@@ -32,16 +32,17 @@ LIBS:valves
 LIBS:drv5013
 LIBS:dips-s
 LIBS:Mount_Hole
+LIBS:BamBam-Sensor-holder-minimal-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "Sesnor-Board"
+Title "Sensor-Board"
 Date "Sonntag, 22. März 2015"
 Rev "1.0"
 Comp "Barney"
-Comment1 "First Try"
+Comment1 "V1.0"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -477,7 +478,7 @@ U 1 1 5513B090
 P 5350 1200
 F 0 "P1" H 5350 1550 50  0000 C CNN
 F 1 "CONN_01X06" V 5450 1200 50  0000 C CNN
-F 2 "w_rf_modules:b6b-ph-kl" H 5350 1200 60  0000 C CNN
+F 2 "w_rf_modules:b6b-ph-kl" H 5350 1200 60  0001 C CNN
 F 3 "" H 5350 1200 60  0000 C CNN
 	1    5350 1200
 	1    0    0    -1  
