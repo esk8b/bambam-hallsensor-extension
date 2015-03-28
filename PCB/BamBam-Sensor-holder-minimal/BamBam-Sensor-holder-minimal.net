@@ -1,7 +1,7 @@
 (export (version D)
   (design
-    (source C:/Users/Laptop-02/Documents/KiCad/Bam-Bam-Sensor-holder-minimal/BamBam-Sensor-holder-minimal.sch)
-    (date "26.03.2015 08:21:14")
+    (source C:/Users/Laptop-02/Documents/KiCad/BamBam-Sensor-holder-minimal/BamBam-Sensor-holder-minimal.sch)
+    (date "28.03.2015 20:50:08")
     (tool "Eeschema (2015-01-16 BZR 5376)-product"))
   (components
     (comp (ref R10)
@@ -131,6 +131,20 @@
       (pins
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive))))
+    (libpart (lib device) (part R)
+      (description Resistance)
+      (footprints
+        (fp R?)
+        (fp SM0603)
+        (fp SM0805)
+        (fp R?-*)
+        (fp SM1206))
+      (fields
+        (field (name Reference) R)
+        (field (name Value) R))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive))))
     (libpart (lib device) (part LED)
       (footprints
         (fp LED-3MM)
@@ -155,20 +169,6 @@
       (fields
         (field (name Reference) TH)
         (field (name Value) THERMISTOR))
-      (pins
-        (pin (num 1) (name ~) (type passive))
-        (pin (num 2) (name ~) (type passive))))
-    (libpart (lib device) (part R)
-      (description Resistance)
-      (footprints
-        (fp R?)
-        (fp SM0603)
-        (fp SM0805)
-        (fp R?-*)
-        (fp SM1206))
-      (fields
-        (field (name Reference) R)
-        (field (name Value) R))
       (pins
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive))))
@@ -209,9 +209,9 @@
         (field (name Value) Mount_Hole))))
   (libraries
     (library (logical device)
-      (uri d:\KiCad\share\library\device.lib))
+      (uri D:\KiCad\share\library\device.lib))
     (library (logical conn)
-      (uri d:\KiCad\share\library\conn.lib))
+      (uri D:\KiCad\share\library\conn.lib))
     (library (logical drv5013)
       (uri C:\Users\Laptop-02\Documents\KiCad\Lib\Symbols\drv5013.lib))
     (library (logical Mount_Hole)
