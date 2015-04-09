@@ -1,11 +1,11 @@
 (export (version D)
   (design
     (source C:/Users/Laptop-02/Documents/KiCad/BamBam-Sensor-holder-minimal/BamBam-Sensor-holder-minimal.sch)
-    (date "28.03.2015 20:50:08")
+    (date "08.04.2015 20:31:18")
     (tool "Eeschema (2015-01-16 BZR 5376)-product"))
   (components
     (comp (ref R10)
-      (value 470)
+      (value 220)
       (footprint Resistors_SMD:R_1206)
       (libsource (lib device) (part R))
       (sheetpath (names /) (tstamps /))
@@ -96,19 +96,19 @@
       (tstamp 550EE1A8))
     (comp (ref H1)
       (value 3mm)
-      (footprint Mounting_Holes:MountingHole_3mm)
+      (footprint packages:MountingHole_3mm)
       (libsource (lib Mount_Hole) (part Mount_Hole))
       (sheetpath (names /) (tstamps /))
       (tstamp 55114BC4))
     (comp (ref H2)
       (value 3mm)
-      (footprint Mounting_Holes:MountingHole_3mm)
+      (footprint packages:MountingHole_3mm)
       (libsource (lib Mount_Hole) (part Mount_Hole))
       (sheetpath (names /) (tstamps /))
       (tstamp 55114C71))
     (comp (ref P1)
       (value CONN_01X06)
-      (footprint w_rf_modules:b6b-ph-kl)
+      (footprint w_rf_modules:B6B-ZR)
       (libsource (lib conn) (part CONN_01X06))
       (sheetpath (names /) (tstamps /))
       (tstamp 5513B090))
@@ -131,20 +131,6 @@
       (pins
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive))))
-    (libpart (lib device) (part R)
-      (description Resistance)
-      (footprints
-        (fp R?)
-        (fp SM0603)
-        (fp SM0805)
-        (fp R?-*)
-        (fp SM1206))
-      (fields
-        (field (name Reference) R)
-        (field (name Value) R))
-      (pins
-        (pin (num 1) (name ~) (type passive))
-        (pin (num 2) (name ~) (type passive))))
     (libpart (lib device) (part LED)
       (footprints
         (fp LED-3MM)
@@ -160,6 +146,20 @@
       (pins
         (pin (num 1) (name A) (type passive))
         (pin (num 2) (name K) (type passive))))
+    (libpart (lib device) (part R)
+      (description Resistance)
+      (footprints
+        (fp R?)
+        (fp SM0603)
+        (fp SM0805)
+        (fp R?-*)
+        (fp SM1206))
+      (fields
+        (field (name Reference) R)
+        (field (name Value) R))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive))))
     (libpart (lib device) (part THERMISTOR)
       (description Resistance)
       (footprints
@@ -188,6 +188,10 @@
         (pin (num 4) (name P4) (type passive))
         (pin (num 5) (name P5) (type passive))
         (pin (num 6) (name P6) (type passive))))
+    (libpart (lib Mount_Hole) (part Mount_Hole)
+      (fields
+        (field (name Reference) H)
+        (field (name Value) Mount_Hole)))
     (libpart (lib drv5013) (part DRV5013)
       (aliases
         (alias DRV5013AD)
@@ -202,20 +206,16 @@
       (pins
         (pin (num 1) (name Vs) (type input))
         (pin (num 2) (name GND) (type input))
-        (pin (num 3) (name Q) (type input))))
-    (libpart (lib Mount_Hole) (part Mount_Hole)
-      (fields
-        (field (name Reference) H)
-        (field (name Value) Mount_Hole))))
+        (pin (num 3) (name Q) (type input)))))
   (libraries
     (library (logical device)
       (uri D:\KiCad\share\library\device.lib))
     (library (logical conn)
       (uri D:\KiCad\share\library\conn.lib))
-    (library (logical drv5013)
-      (uri C:\Users\Laptop-02\Documents\KiCad\Lib\Symbols\drv5013.lib))
     (library (logical Mount_Hole)
-      (uri C:\Users\Laptop-02\Documents\KiCad\Lib\Symbols\Mount_Hole.lib)))
+      (uri C:\Users\Laptop-02\Documents\KiCad\Lib\Symbols\Mount_Hole.lib))
+    (library (logical drv5013)
+      (uri C:\Users\Laptop-02\Documents\KiCad\Lib\Symbols\drv5013.lib)))
   (nets
     (net (code 1) (name /A)
       (node (ref R21) (pin 2))

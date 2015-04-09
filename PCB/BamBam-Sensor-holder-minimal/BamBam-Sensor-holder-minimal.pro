@@ -1,4 +1,4 @@
-update=28.03.2015 20:56:03
+update=08.04.2015 11:53:35
 version=1
 last_client=kicad
 [cvpcb]
@@ -54,15 +54,17 @@ LibName30=valves
 LibName31=C:/Users/Laptop-02/Documents/KiCad/Lib/Symbols/drv5013
 LibName32=C:/Users/Laptop-02/Documents/KiCad/Lib/Symbols/dips-s
 LibName33=C:/Users/Laptop-02/Documents/KiCad/Lib/Symbols/Mount_Hole
+[general]
+version=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
 LastNetListRead=BamBam-Sensor-holder-minimal.net
 UseCmpFile=1
-PadDrill=0.9652
-PadDrillOvalY=0.9652
-PadSizeH=1.4732
-PadSizeV=1.4732
+PadDrill=3
+PadDrillOvalY=3
+PadSizeH=3
+PadSizeV=3
 PcbTextSizeV=1.5
 PcbTextSizeH=1.5
 PcbTextThickness=0.3
@@ -74,5 +76,3 @@ SolderMaskMinWidth=0
 DrawSegmentWidth=0.15
 BoardOutlineThickness=0.09999999999999999
 ModuleOutlineThickness=0.3
-[general]
-version=1
