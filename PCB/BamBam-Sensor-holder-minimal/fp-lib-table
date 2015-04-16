@@ -1,5 +1,4 @@
 (fp_lib_table
-  (lib (name dips-s)(type Legacy)(uri ${KIPRJMOD}/../Lib/packages/dips-s.mod)(options "")(descr ""))
   (lib (name w_rf_modules)(type KiCad)(uri ${KIPRJMOD}/../Lib/w_rf_modules.pretty)(options "")(descr ""))
   (lib (name packages)(type KiCad)(uri ${KIPRJMOD}/../Lib/packages.pretty)(options "")(descr ""))
 )

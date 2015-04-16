@@ -1,155 +1,136 @@
-Cmp-Mod V01 Genere par PcbNew le 08.04.2015 11:53:56
+Cmp-Mod V01 Created by Cvpcb (after 2015-mar-04 BZR unknown)-product   date = 16.04.2015 12:55:46
 
 BeginCmp
-TimeStamp = 55115E9D
-Path = /5513B090
-Reference = P1;
-ValeurCmp = CONN_01X06;
-IdModule  = w_rf_modules:B6B-ZR;
-EndCmp
-
-BeginCmp
-TimeStamp = 550EF3D7
-Path = /550EDAE4
-Reference = R23;
-ValeurCmp = 10k;
-IdModule  = Resistors_SMD:R_1206;
-EndCmp
-
-BeginCmp
-TimeStamp = 550EE342
-Path = /550EC04E
+TimeStamp = /550EC04E;
 Reference = C1;
 ValeurCmp = 100nF;
 IdModule  = Resistors_SMD:R_1206;
 EndCmp
 
 BeginCmp
-TimeStamp = 550EE955
-Path = /550EC0E2
+TimeStamp = /550EC0E2;
 Reference = C2;
 ValeurCmp = 100nF;
 IdModule  = Resistors_SMD:R_1206;
 EndCmp
 
 BeginCmp
-TimeStamp = 550EF3CA
-Path = /550EC10B
+TimeStamp = /550EC10B;
 Reference = C3;
 ValeurCmp = 100nF;
 IdModule  = Resistors_SMD:R_1206;
 EndCmp
 
 BeginCmp
-TimeStamp = 550FD1C8
-Path = /550EBFC1
+TimeStamp = /550EBFC1;
 Reference = C10;
 ValeurCmp = 1uF;
 IdModule  = Resistors_SMD:R_1206;
 EndCmp
 
 BeginCmp
-TimeStamp = 550EF71C
-Path = /550EDF31
+TimeStamp = /550EDF31;
 Reference = C21;
 ValeurCmp = 680pF;
 IdModule  = Resistors_SMD:R_1206;
 EndCmp
 
 BeginCmp
-TimeStamp = 550ECBAA
-Path = /550EE154
+TimeStamp = /550EE154;
 Reference = C22;
 ValeurCmp = 680pF;
 IdModule  = Resistors_SMD:R_1206;
 EndCmp
 
 BeginCmp
-TimeStamp = 550EF3E4
-Path = /550EE1A8
+TimeStamp = /550EE1A8;
 Reference = C23;
 ValeurCmp = 680pF;
 IdModule  = Resistors_SMD:R_1206;
 EndCmp
 
 BeginCmp
-TimeStamp = 5513D079
-Path = /550EB7C7
+TimeStamp = /550EB7C7;
 Reference = D10;
 ValeurCmp = blau;
 IdModule  = LEDs:LED-0805;
 EndCmp
 
 BeginCmp
-TimeStamp = 550EF6CA
-Path = /550EAAEC
+TimeStamp = /55114BC4;
+Reference = H1;
+ValeurCmp = 3mm;
+IdModule  = Mounting_Holes:MountingHole_3mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /55114C71;
+Reference = H2;
+ValeurCmp = 3mm;
+IdModule  = Mounting_Holes:MountingHole_3mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /5513B090;
+Reference = P1;
+ValeurCmp = CONN_01X06;
+IdModule  = w_rf_modules:B6B-ZR;
+EndCmp
+
+BeginCmp
+TimeStamp = /550EAAEC;
 Reference = R10;
-ValeurCmp = 470;
+ValeurCmp = 220;
 IdModule  = Resistors_SMD:R_1206;
 EndCmp
 
 BeginCmp
-TimeStamp = 5513EF55
-Path = /550ED88C
+TimeStamp = /550ED88C;
 Reference = R21;
 ValeurCmp = 10k;
 IdModule  = Resistors_SMD:R_1206;
 EndCmp
 
 BeginCmp
-TimeStamp = 550EDEBB
-Path = /550EDA9B
+TimeStamp = /550EDA9B;
 Reference = R22;
 ValeurCmp = 10k;
 IdModule  = Resistors_SMD:R_1206;
 EndCmp
 
 BeginCmp
-TimeStamp = 5513B4B1
-Path = /5513B3EE
+TimeStamp = /550EDAE4;
+Reference = R23;
+ValeurCmp = 10k;
+IdModule  = Resistors_SMD:R_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /5513B3EE;
 Reference = TH1;
 ValeurCmp = THERMISTOR;
 IdModule  = Discret:R1;
 EndCmp
 
 BeginCmp
-TimeStamp = 55105487
-Path = /550EC77C
-Reference = U3;
-ValeurCmp = DRV5013AD;
-IdModule  = packages:P-SSO-3-2;
-EndCmp
-
-BeginCmp
-TimeStamp = 550EDCCB
-Path = /550EC74B
-Reference = U2;
-ValeurCmp = DRV5013AD;
-IdModule  = packages:P-SSO-3-2;
-EndCmp
-
-BeginCmp
-TimeStamp = 550EDC9A
-Path = /550EBD66
+TimeStamp = /550EBD66;
 Reference = U1;
 ValeurCmp = DRV5013AD;
 IdModule  = packages:P-SSO-3-2;
 EndCmp
 
 BeginCmp
-TimeStamp = 55114BCF
-Path = /55114C71
-Reference = H2;
-ValeurCmp = 3mm;
-IdModule  = packages:MountingHole_3mm;
+TimeStamp = /550EC74B;
+Reference = U2;
+ValeurCmp = DRV5013AD;
+IdModule  = packages:P-SSO-3-2;
 EndCmp
 
 BeginCmp
-TimeStamp = 55115ECA
-Path = /55114BC4
-Reference = H1;
-ValeurCmp = 3mm;
-IdModule  = packages:MountingHole_3mm;
+TimeStamp = /550EC77C;
+Reference = U3;
+ValeurCmp = DRV5013AD;
+IdModule  = packages:P-SSO-3-2;
 EndCmp
 
 EndListe
