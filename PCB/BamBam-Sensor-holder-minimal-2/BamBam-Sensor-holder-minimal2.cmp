@@ -1,0 +1,94 @@
+Cmp-Mod V01 Created by Cvpcb (after 2015-may-01 BZR unknown)-product   date = 05.05.2015 20:54:56
+
+BeginCmp
+TimeStamp = /550EC04E;
+Reference = C1;
+ValeurCmp = 100nF;
+IdModule  = Capacitors_SMD:C_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /550EC0E2;
+Reference = C2;
+ValeurCmp = 100nF;
+IdModule  = Capacitors_SMD:C_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /550EC10B;
+Reference = C3;
+ValeurCmp = 100nF;
+IdModule  = Capacitors_SMD:C_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /550EBFC1;
+Reference = C10;
+ValeurCmp = 1uF;
+IdModule  = Capacitors_SMD:C_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /550EB7C7;
+Reference = D10;
+ValeurCmp = blau;
+IdModule  = LEDs:LED-0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /55114BC4;
+Reference = H1;
+ValeurCmp = 2mm;
+IdModule  = packages:MountingHole_2mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /55114C71;
+Reference = H2;
+ValeurCmp = 2mm;
+IdModule  = packages:MountingHole_2mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /5513B090;
+Reference = P1;
+ValeurCmp = CONN_01X06;
+IdModule  = w_rf_modules:B6B-ZR;
+EndCmp
+
+BeginCmp
+TimeStamp = /550EAAEC;
+Reference = R10;
+ValeurCmp = 220;
+IdModule  = Resistors_SMD:R_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /5513B3EE;
+Reference = TH1;
+ValeurCmp = THERMISTOR;
+IdModule  = Discret:R1;
+EndCmp
+
+BeginCmp
+TimeStamp = /550EBD66;
+Reference = U1;
+ValeurCmp = DRV5013AD;
+IdModule  = packages:P-SSO-3-2;
+EndCmp
+
+BeginCmp
+TimeStamp = /550EC74B;
+Reference = U2;
+ValeurCmp = DRV5013AD;
+IdModule  = packages:P-SSO-3-2;
+EndCmp
+
+BeginCmp
+TimeStamp = /550EC77C;
+Reference = U3;
+ValeurCmp = DRV5013AD;
+IdModule  = packages:P-SSO-3-2;
+EndCmp
+
+EndListe

@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name w_rf_modules)(type KiCad)(uri ${KIPRJMOD}/../Lib/w_rf_modules.pretty)(options "")(descr ""))
+  (lib (name packages)(type KiCad)(uri C:\Users\Laptop-02\Documents\KiCad\Lib\packages.pretty)(options "")(descr ""))
+)
